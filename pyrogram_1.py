@@ -14,4 +14,4 @@ target = "pyrogramlounge"  # Target channel/supergroup
 
 with app:
     for member in app.iter_chat_members(target):
-        print(member.user.first_name)
+        print(member.user)
