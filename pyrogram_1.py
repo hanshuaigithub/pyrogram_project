@@ -10,8 +10,8 @@ api_hash = "d4c1cfcea1e35a793443560545ed3318"
 # app.run()
 
 app = Client("+639272572955", api_id, api_hash)
-target = "https://t.me/pyrogramlounge"  # Target channel/supergroup
+target = "pyrogramchat"  # Target channel/supergroup
 
 with app:
     for member in app.iter_chat_members(target):
-        print(member)
+        print(member.user.first_name)
