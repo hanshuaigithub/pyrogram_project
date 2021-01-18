@@ -16,6 +16,6 @@ with app:
     # for member in app.iter_chat_members(target):
     #     print(member.user)
     
-    app.add_chat_members("pyrogramdemos", "@lucky_luky")
+    app.add_chat_members("pyrogramdemos", "@m100py")
     app.add_chat_members("pyrogramdemos", "@snake9936")
 
