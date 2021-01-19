@@ -13,7 +13,9 @@ app = Client("+639272572955", api_id, api_hash)
 target = "pyrogramlounge"  # Target channel/supergroup
 
 with app:
-    for member in app.iter_chat_members(target):
+    members = app.iter_chat_members(target)
+    for i in range(0,20):
+        member = members[i]
         print(member.user)
     
     # app.add_chat_members("pyrogramdemos", "@jk123jk456")
