@@ -1,4 +1,5 @@
 from pyrogram import Client
+from pyrogram.errors import RPCError
 
 api_id = 2675972
 api_hash = "d4c1cfcea1e35a793443560545ed3318"
@@ -18,7 +19,10 @@ with app:
         member = members[i]
         print(member.user.first_name)
         if member.user.username != "TylerMatthew":
-            app.add_chat_members("pyrogramdemos", member.user.id)
+            try:
+                app.add_chat_members("pyrogramdemos", member.user.id)
+            except RPCError as e:
+                print e.MESSAGE
     
     # app.add_chat_members("pyrogramdemos", "@jk123jk456")
     # app.add_chat_members("pyrogramdemos", "@snake9936")
