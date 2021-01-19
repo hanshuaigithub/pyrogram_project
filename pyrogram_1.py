@@ -22,7 +22,7 @@ with app:
             try:
                 app.add_chat_members("pyrogramdemos", member.user.id)
             except RPCError as e:
-                print (e.MESSAGE)
+                print(e.MESSAGE)
     
     # app.add_chat_members("pyrogramdemos", "@jk123jk456")
     # app.add_chat_members("pyrogramdemos", "@snake9936")
