@@ -9,13 +9,13 @@ target = "sigui588"  # Target channel/supergroup
 
 with app:
     members = app.iter_chat_members(target)
-    print(f"Chanel members counts: {len(members)}")
+    print(f"Chanel members counts : {len(members)}")
     for i in range(100,200):
         member = members[i]
-        print("adding :" + member.user.first_name)
+        print(f"adding :{member.user.first_name}")
         try:
             if app.add_chat_members("pyrogramdemos", member.user.id):
                 print("success...")
         except RPCError as e:
-            print("err :" + e.MESSAGE)
+            print(f"err :{e.MESSAGE}")
 
