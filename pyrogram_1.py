@@ -15,7 +15,7 @@ target = "sigui588"  # Target channel/supergroup
 
 with app:
     members = app.iter_chat_members(target)
-    for i in range(0,20):
+    for i in range(0,100):
         member = members[i]
         print(member.user.first_name)
         if member.user.username != "TylerMatthew":
