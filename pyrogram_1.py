@@ -9,7 +9,7 @@ target = "sigui588"  # Target channel/supergroup
 
 with app:
     members = app.iter_chat_members(target)
-    print("Chanel members counts:" + len(members))
+    print(f"Chanel members counts: {len(members)}")
     for i in range(100,200):
         member = members[i]
         print("adding :" + member.user.first_name)
