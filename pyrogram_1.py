@@ -10,13 +10,13 @@ target = "cnsex8"  # Target channel/supergroup sigui588
 with app:
     members = app.iter_chat_members(target)
     print(f"Chanel members counts : {len(members)}")
-    # for i in range(100,200):
-    #     member = members[i]
-    #     print(f"adding :{member.user.first_name}")
-    #     try:
-    #         if app.add_chat_members("pyrogramdemos", member.user.id):
-    #             print("success...")
-    #     except RPCError as e:
-    #         print(f"err :{e.MESSAGE}")
+    for i in range(0,100):
+        member = members[i]
+        print(f"adding :{member.user.first_name}")
+        try:
+            if app.add_chat_members("pyrogramdemos", member.user.id):
+                print(f"success...{i}")
+        except RPCError as e:
+            print(f"err :{e.MESSAGE}")
 
 
