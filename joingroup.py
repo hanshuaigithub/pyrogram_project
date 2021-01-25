@@ -18,7 +18,7 @@ with app:
         print(f"adding :{member['first_name']}")
         try:
             if app.add_chat_members("sexchatcn", member['id']):
-                print(f"success...{i}")
+                print(f"success...[{i}]")
         except RPCError as e:
             print(f"err :{e.MESSAGE}")
 
