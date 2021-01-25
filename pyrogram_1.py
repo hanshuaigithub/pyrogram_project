@@ -13,7 +13,7 @@ with app:
     print(f"Chanel members counts : {len(members)}")
 
     members_arr = []
-    for i in range(0,100):
+    for i in range(0,len(members)):
         member = members[i]
         members_arr.append({'id':member.user.id, 'first_name':member.user.first_name})
     
