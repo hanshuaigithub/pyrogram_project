@@ -12,8 +12,11 @@ with app:
     members = app.iter_chat_members(target)
     print(f"Chanel members counts : {len(members)}")
 
-    member = members[0]
-    print(member.__dict__)
+    for i in range(0,100)
+        member = members[i]
+        members_open = open('members.json', 'a')
+        members_open.write("{"id":123,"firstname":"John Smith","url":"http://www.runoob.com"}")
+
     # members_json_str = json.dumps(member.__dict__)
     # members_open = open('members.json', 'w')
     # members_open.write(members_json_str)
