@@ -15,6 +15,7 @@ with app:
 
     for i in range(0,20):
         member = members[i]
+        print(member)
         print(f"adding :{member.first_name}")
         try:
             if app.add_chat_members("sexchatcn", member.id):
