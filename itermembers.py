@@ -15,6 +15,7 @@ with app:
     for i in range(0,len(members)):
         member = members[i]
         members_arr.append({'id':member.user.id, 'first_name':member.user.first_name})
+        print(member.user.username)
     
     members_json_str = json.dumps(members_arr)
     members_open = open('members.json', 'w')
