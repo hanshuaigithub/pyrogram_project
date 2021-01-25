@@ -8,8 +8,15 @@ api_id = 2763716
 api_hash = "d4c2d2e53efe8fbb71f0d64deb84b3da"
 app = Client("+639277144517", api_id, api_hash)
 
-fromIndex = sys.argv[1]
-toIndex = sys.argv[2]
+fromIndex = 0
+toIndex = 0
+
+if len(sys.argv) == 3:
+    fromIndex = int(sys.argv[1])
+    toIndex = int(sys.argv[2])
+else:
+    print("please input index range.")
+    sys.exit()
 
 with app:
     f = open("members.json")
