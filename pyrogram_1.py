@@ -13,10 +13,11 @@ with app:
     print(f"Chanel members counts : {len(members)}")
 
     member = members[0]
-    members_json_str = json.dumps(member.__dict__)
-    members_open = open('members.json', 'w')
-    members_open.write(members_json_str)
-    members_open.close()
+    print(member.__dict__)
+    # members_json_str = json.dumps(member.__dict__)
+    # members_open = open('members.json', 'w')
+    # members_open.write(members_json_str)
+    # members_open.close()
 
     # for i in range(0,100):
     #     member = members[i]
