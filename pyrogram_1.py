@@ -11,7 +11,13 @@ target = "sigui588"  # Target channel/supergroup sigui588 cnsex8
 with app:
     members = app.iter_chat_members(target)
     print(f"Chanel members counts : {len(members)}")
-    print(members)
+    for i in range(0,2):
+        member = members[i]
+        members_json_str = json.dumps(member)
+        members_open = open('members.json', 'w')
+        members_open.write(members_json_str)
+        members_open.close()
+
     # members_json_str = json.dumps(members)
     # members_open = open('members.json', 'w')
     # members_open.write(members_json_str)
