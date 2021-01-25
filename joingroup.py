@@ -15,10 +15,9 @@ with app:
 
     for i in range(0,20):
         member = members[i]
-        print(member)
-        print(f"adding :{member.first_name}")
+        print(f"adding :{member['first_name']}")
         try:
-            if app.add_chat_members("sexchatcn", member.id):
+            if app.add_chat_members("sexchatcn", member['id']):
                 print(f"success...{i}")
         except RPCError as e:
             print(f"err :{e.MESSAGE}")
