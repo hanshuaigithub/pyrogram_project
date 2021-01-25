@@ -13,7 +13,7 @@ with app:
     f.close()
     members = json.loads(members_json_str)
 
-    for i in range(80,160):
+    for i in range(140,160):
         member = members[i]
         print(f"adding :{member['first_name']}")
         try:
