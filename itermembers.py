@@ -1,10 +1,10 @@
 from pyrogram import Client
 import json
 
-api_id = 2675972
-api_hash = "d4c1cfcea1e35a793443560545ed3318"
+api_id = 2250010
+api_hash = "d18a91b8061ea48c5b536745a396d09a"
+app = Client("+639277142732", api_id, api_hash)
 
-app = Client("+639272572955", api_id, api_hash)
 target = "cnsex8"  # Target channel/supergroup sigui588 cnsex8
 
 with app:
